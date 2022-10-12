@@ -13,6 +13,6 @@ resource "aws_instance" "nginx1" {
               EOF
 
 
-  tags = local.common_tags
+  tags = merge(local.common_tags, local.ec2_name)
 
 }
