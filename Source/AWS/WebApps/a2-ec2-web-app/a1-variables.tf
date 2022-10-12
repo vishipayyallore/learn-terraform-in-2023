@@ -37,9 +37,11 @@ variable "company" {
 variable "project" {
   type        = string
   description = "Project name for resource tagging"
+  default     = "WebApp"
 }
 
 variable "billing_code" {
   type        = string
   description = "Billing code for resource tagging"
+  default     = "1234567890"
 }
