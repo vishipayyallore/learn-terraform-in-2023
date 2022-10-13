@@ -11,8 +11,8 @@ resource "aws_internet_gateway" "igw" {
   tags = local.common_tags
 }
 
-resource "aws_subnet" "subnetforwebapp" {
-  cidr_block              = var.vpc_subnetforwebapp_cidr_block
+resource "aws_subnet" "subnet1forwebapp" {
+  cidr_block              = var.vpc_subnet1forwebapp_cidr_block
   vpc_id                  = aws_vpc.vpcforwebapp.id
   map_public_ip_on_launch = var.map_public_ip_on_launch
 

@@ -7,7 +7,7 @@ resource "aws_route_table" "rtb" {
   }
 }
 
-resource "aws_route_table_association" "rta-subnetforwebapp" {
-  subnet_id      = aws_subnet.subnetforwebapp.id
+resource "aws_route_table_association" "rta-subnet1forwebapp" {
+  subnet_id      = aws_subnet.subnet1forwebapp.id
   route_table_id = aws_route_table.rtb.id
 }

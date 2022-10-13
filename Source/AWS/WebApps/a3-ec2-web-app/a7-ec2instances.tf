@@ -1,7 +1,7 @@
 resource "aws_instance" "nginx1" {
   ami                    = nonsensitive(data.aws_ssm_parameter.ami.value)
   instance_type          = var.instance_type
-  subnet_id              = aws_subnet.subnetforwebapp.id
+  subnet_id              = aws_subnet.subnet1forwebapp.id
   vpc_security_group_ids = [aws_security_group.nginx-sg.id]
 
   user_data = <<EOF
