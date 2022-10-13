@@ -1,0 +1,17 @@
+terraform version
+terraform -help
+
+terraform init
+
+terraform validate
+
+terraform plan -out filename.tfplan
+terraform apply "filename.tfplan"
+
+terraform show
+terraform output
+
+terraform destroy
+
+terraform state list
+terraform state show aws_instance.nginx1

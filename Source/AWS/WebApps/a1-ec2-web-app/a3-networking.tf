@@ -9,7 +9,7 @@ resource "aws_internet_gateway" "igw" {
 
 }
 
-resource "aws_subnet" "subnetforwebapp" {
+resource "aws_subnet" "subnet1forwebapp" {
   cidr_block              = "10.0.0.0/24"
   vpc_id                  = aws_vpc.vpcforwebapp.id
   map_public_ip_on_launch = true
