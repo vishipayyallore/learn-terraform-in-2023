@@ -1,3 +1,11 @@
+data "aws_ssm_parameter" "ami" {
+  name = "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2"
+}
+
+data "aws_availability_zones" "available" {
+  state = "available"
+}
+
 resource "aws_vpc" "vpcforwebapp" {
   cidr_block           = var.vpc_cidr_block
   enable_dns_hostnames = var.enable_dns_hostnames
