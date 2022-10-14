@@ -9,7 +9,7 @@ resource "aws_instance" "nginx1" {
 sudo amazon-linux-extras install -y nginx1
 sudo service nginx start
 sudo rm /usr/share/nginx/html/index.html
-echo '<html><head><title>Taco Team Server 1</title></head><body style="background-color:#ABCDEF"><p style="text-align: center;"><span style="color:#FFFFFF;"><span style="font-size:28px; color: maroon;">You did it! Have a &#127790;  Server 1 (Version 3)</span></span></p></body></html>' | sudo tee /usr/share/nginx/html/index.html
+echo '<html><head><title>Taco Team Server 1</title></head><body style="background-color:#1b8bfa"><p style="text-align: center;"><span style="color:#FFFFFF;"><span style="font-size:28px; color: maroon;">You did it! Have a &#127790;  Server 1 (Version 3)</span></span></p></body></html>' | sudo tee /usr/share/nginx/html/index.html
 EOF
 
   tags = merge(local.common_tags, local.ec2_name)
@@ -27,7 +27,7 @@ resource "aws_instance" "nginx2" {
 sudo amazon-linux-extras install -y nginx1
 sudo service nginx start
 sudo rm /usr/share/nginx/html/index.html
-echo '<html><head><title>Taco Team Server 2</title></head><body style="background-color:#ABCDEF"><p style="text-align: center;"><span style="color:#FFFFFF;"><span style="font-size:28px; color: maroon;">You did it! Have a &#127790;  Server 2 (Version 3)</span></span></p></body></html>' | sudo tee /usr/share/nginx/html/index.html
+echo '<html><head><title>Taco Team Server 2</title></head><body style="background-color:#1b8bfa"><p style="text-align: center;"><span style="color:#FFFFFF;"><span style="font-size:28px; color: maroon;">You did it! Have a &#127790;  Server 2 (Version 3)</span></span></p></body></html>' | sudo tee /usr/share/nginx/html/index.html
 EOF
 
   tags = merge(local.common_tags, local.ec2_name)
