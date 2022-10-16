@@ -5,8 +5,11 @@ locals {
     billing_code = var.billing_code
   }
 
-  ec2_name = {
-    Name = "EC2 for ${var.project}"
+  ec2_name1 = {
+    Name = "EC2 1 for ${var.project}"
   }
 
+  ec2_name2 = {
+    Name = "EC2 2 for ${var.project}"
+  }
 }
